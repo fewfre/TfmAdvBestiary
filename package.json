@@ -1,0 +1,23 @@
+{
+  "name": "tfmadv",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/main.js",
+  "dependencies": {
+    "tsify": "^4.0.1",
+    "typescript": "^3.4.5"
+  },
+  "devDependencies": {
+    "@types/pixi.js": "^4.8.7",
+    "browserify": "^13.3.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile": "npx browserify src/main.ts -p [ tsify ] > build/bundle.js",
+    "compile2": "tsc --outDir build",
+    "dev-watch": "nodemon --watch src/main.ts --exec 'tsc --outDir build' src/main.ts",
+    "browser-sync": "browser-sync start --server --files build/*"
+  },
+  "author": "Fewfre",
+  "license": "GPL"
+}

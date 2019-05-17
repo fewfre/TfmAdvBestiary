@@ -1,0 +1,9 @@
+node_modules/
+.vscode
+build/
+
+# temp files
+.DS_Store
+Thumbs.db
+Desktop.ini
+npm-debug.log
